@@ -2,14 +2,11 @@ const mysql = require('mysql');
 
 // MySQL database configuration
 const db = mysql.createConnection({
-DB_HOST=141.94.50.209
-DB_USER=userdbds3
-DB_PASSWORD=O$c@rm!kEJul303
-DB_DATABASE=dbds3
-DB_PORT=3306
-DB_USER1=authenticator
-DB_PASSWORD1=O$c@rm!kEJul909
-DB_DATABASE1=UserAuth
+host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
+    PORT: process.env.DB_PORT
 
   });
   
